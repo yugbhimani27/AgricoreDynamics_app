@@ -58,9 +58,11 @@ export default function App() {
   };
 
   const handleScanAgain = () => {
-    setSensorData(null);
+  setSensorData(null);
+  setTimeout(() => {
     setCurrentScreen('main');
-  };
+  }, 50);
+};
 
   const handleChangeLanguage = () => {
     setCurrentScreen('language');
